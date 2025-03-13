@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APJ Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="highlight">APJ</span> Furniture
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Product <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><em>Chairs</em></a></li>
+                        <li><a href="#"><em>Tables</em></a></li>
+                        <li><a href="#"><em>Sofas</em></a></li>
+                        <li><a href="#"><em>Beds</em></a></li>
+                        <li><a href="#"><em>Lamps</em></a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        
+        <div class="banner-overlay">
+        
+            <h1>Help You To Make <br> Modern Furniture</h1>
+            <p>We help you to create and organize your room to be more cozy, designed by professional interior designers.</p>
+            <a href="#" class="btn">See Our Product</a>
+        </div>
+
+        <div class="navigation">
+            
+        </div>
+
+        <div class="slide-indicator">
+            <span>01</span>
+            <hr>
+            <span>02</span>
+        </div>
+    </section>
+    <div class="client">
+        <img src="./images/client.png" alt="">
+    </div>
+
+    <!----p-->
+    <section class="interior-section">
+        <div class="carousel">
+            <div class="carousel-image">
+                <img src="images/prodect1.png" alt="Living Room">
+            </div>
+            <div class="carousel-controls">
+                
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Some of the interiors that we <br>provide for you</h2>
+
+            <div class="interior-item">
+                <img src="images/product2.png" alt="Living Room">
+                <div class="text">
+                    <h3>Living Room</h3>
+                    <p>As one of the most-frequented spots in the home, a living room sets the tone for the rest of the house.</p>
+                    <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="interior-item">
+                <img src="images/prodect3.png" alt="Bedroom">
+                <div class="text">
+                    <h3>Bedroom</h3>
+                    <p>Unleash your creativity to make it not only comfortable but also a pleasant place to start and end your day.</p>
+                    <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="interior-item">
+                <img src="images/prodect4.png" alt="Office">
+                <div class="text">
+                    <h3>Office</h3>
+                    <p>The home office design ideas featured here are maximized for efficiency and optimized for space.</p>
+                    <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="products">
+        <h1>Products</h1>
+        <div class="categories">
+            <span class="active">All</span>
+            <span>Bed</span>
+            <span>Chair</span>
+            <span>Light</span>
+            <span>Sofa</span>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <span class="category">Sofa</span>
+                <h2>Glossy Cube</h2>
+                <img src="./images/chair1.png" alt="Glossy Cube Sofa">
+                <p class="price">Rs 400.000</p>
+            </div>
+
+            <div class="product-card">
+                <span class="category">Light</span>
+                <h2>Floor Monolamp</h2>
+                <img src="./images/lamp.png" alt="Floor Monolamp">
+                <p class="price">Rs 210.000</p>
+            </div>
+
+            <div class="product-card">
+                <span class="category">Chair</span>
+                <h2>Vintage Chair</h2>
+                <img src="./images/chair2.png" alt="Vintage Chair">
+                <p class="price">Rs 410.000</p>
+            </div>
+
+            <div class="product-card">
+                <span class="category">Bed</span>
+                <h2>Comfort King Bed</h2>
+                <img src="./images/bed.png" alt="Comfort King Bed">
+                <p class="price" style="margin-top: 90px;">Rs 410.000</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="subscribe-container">
+            <div class="subscribe-text">
+                <h2>SUBSCRIBE TO GET <br> THE LAST NEWS ABOUT US</h2>
+                <p>We recommend you to subscribe to our newspaper, <br> enter your email to get our daily update about us.</p>
+            </div>
+            <div class="subscribe-form">
+                <div class="input-box">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="company-name">PT. ANDARA PANCA JAYA</p>
+            <p>© 2020. All rights reserved</p>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Partnership</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
